@@ -1,0 +1,20 @@
+.clear {
+  clear: both;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: gray;
+}
+/*# sourceMappingURL=main.css.map */
+nav {
+  background-color: red;
+}
+h1 {
+  color: orange;
+}
