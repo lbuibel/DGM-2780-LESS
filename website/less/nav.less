@@ -1,3 +1,65 @@
+@nav-height: 13rem;
+
 nav {
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4%;
+    height: nav-height;
+}
+
+nav > div {
+    text-align: center;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+#close {
+    color: white;
+}
+
+.nav-window {
+    padding: 0;
+    margin: 0;
+    // background-image: url('../images/mtn.jpeg');
+    background-color: gray;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0rem;
+    height: 100vh;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+}
+
+.nav-window > div {
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.nav-links {
+}
+
+.nav-links ul {
+    padding: 0;
+    margin: 0;
+}
+.nav-links li {
+    list-style-type: none;
+    margin: 5rem 0;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 2.4rem;
+}
+
+.nav-active {
+    transform: translateX(0);
 }
