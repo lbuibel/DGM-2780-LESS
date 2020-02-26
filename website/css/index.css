@@ -18,10 +18,43 @@ ul {
   padding-inline-start: 0px;
 }
 /*# sourceMappingURL=main.css.map */
-.background-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+ion-icon {
+  font-size: 24px;
+}
+ion-icon {
+  color: #272727;
+}
+.icon-fill {
+  background-color: #272727;
+  border: 0.2rem solid #272727;
+  color: white;
+  padding: 1rem;
+  border-radius: 4rem;
+}
+#burger {
+  background-color: #272727;
+  border: 0.2rem solid #272727;
+  color: white;
+  padding: 1rem;
+  border-radius: 4rem;
+}
+#cart {
+  font-size: 3.6rem;
+}
+#close {
+  color: white;
+  border: 0.2rem solid white;
+  padding: 1rem;
+  border-radius: 4rem;
+}
+#burger:hover {
+  cursor: pointer;
+}
+#cart:hover {
+  cursor: pointer;
+}
+#close:hover {
+  cursor: pointer;
 }
 nav {
   display: flex;
@@ -32,12 +65,6 @@ nav {
 }
 nav > div {
   text-align: center;
-}
-.burger {
-  cursor: pointer;
-}
-#close {
-  color: white;
 }
 .nav-window {
   padding: 0;
@@ -64,7 +91,7 @@ nav > div {
   display: flex;
   align-items: center;
   text-align: left;
-  padding-left: 3%;
+  padding: 2rem 4%;
 }
 .nav-links ul {
   padding: 0;
@@ -84,21 +111,15 @@ nav > div {
 @keyframes nav-link-fade {
   from {
     opacity: 0;
-    transform: translate(1rem);
+    transform: translateX(-10rem);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0rem);
   }
 }
 html {
   font-size: 62.5%;
-}
-ion-icon {
-  font-size: 36px;
-}
-ion-icon {
-  color: #272727;
 }
 h1 {
   font-family: 'Yeseva One';

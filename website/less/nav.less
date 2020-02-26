@@ -1,6 +1,7 @@
 @nav-height: 13rem;
 @base-url: "http://127.0.0.1:5501/website/";
 
+// CONTAINS MAMBURGER MENU, COMPANY NAME AND CART LINK
 nav {
     display: flex;
     justify-content: space-between;
@@ -9,19 +10,12 @@ nav {
     height: nav-height;
 }
 
+// CENTERING SPA NAME
 nav > div {
     text-align: center;
 }
 
-
-.burger {
-    cursor: pointer;
-}
-
-#close {
-    color: white;
-}
-
+// OPENED HAMBURGER MENU
 .nav-window {
     padding: 0;
     margin: 0;
@@ -37,6 +31,7 @@ nav > div {
     opacity: 0;
 }
 
+// FADES MENU PAGE IN AND OUT
 .nav-active {
     transform: translateX(0);
     transition: .5s ease-in;
@@ -44,19 +39,21 @@ nav > div {
     opacity: 1;
 }
 
+// DIV CONTAINS MENU CLOSE BUTTON - SPACING IS TO MATCH IT UP WITH HAMBURGER BUTTON
 .nav-window > div {
     height: 13rem;
     display: flex;
     align-items: center;
     text-align: left;
-    padding-left: 3%;
+    padding: 2rem 4%;
 }
-
 
 .nav-links ul {
     padding: 0;
     margin: 0;
 }
+
+// SPACING NAVIGATION LINKS
 .nav-links li {
     list-style-type: none;
     margin: 0rem 0 5rem 0;
@@ -70,14 +67,14 @@ nav > div {
     font-size:3.6rem;
 }
 
+// USED TO FADE/SLIDE IN LINKS WHEN MENU PAGE OPENS
 @keyframes nav-link-fade {
     from {
         opacity: 0;
-        transform: translate(1rem)
+        transform: translateX(-10rem)
     }
     to {
         opacity: 1;
-        transform: translateX(0)
+        transform: translateX(0rem)
     }
 }
-

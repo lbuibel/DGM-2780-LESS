@@ -1,31 +1,32 @@
 // Custom JS here
+
+// OPENING HAMBURGER MENU
 const navOpen = () => {
     const burger = document.querySelector('#burger')
     const nav = document.querySelector('.nav-window')
     const navLinks = document.querySelectorAll('.nav-links li')
-    // opens navigation page
+    // CLICKING ON THE MENU BTN
     burger.addEventListener('click', ()=> {
         console.log('test')
         nav.classList.toggle('nav-active')
-    })
-    // fade in links
-    navLinks.forEach((link, index) => {
-        // fades in each element with time delay
-        if (link.style.animation) {
-            link.style.animation = ''
-        } else {
-            link.style.animation = `nav-link-fade 1s ease forwards ${index / 15 + 1.5}s`
-        }
-        console.log(index/7 + 1.5)
+        // FADE IN LINKS - INDEX IS USED TO DELAY EACH LINK fade in links
+        navLinks.forEach((link, index) => {
+            link.style.animation = `nav-link-fade .5s ease ${index / 7}s`
+        })
     })
 }
 
+// CLOSING MENU
 const navClose = () => {
-    console.log('closed')
     const close = document.querySelector('#close')
     const nav = document.querySelector('.nav-window')
+    const navLinks = document.querySelectorAll('.nav-links li')
     close.addEventListener('click', () => {
         nav.classList.remove('nav-active')
+        navLinks.forEach((link) => {
+            // REMOVING ANIMATION FROM LINKS AFTER USER CLOSES MENU
+            link.style.animation = ''
+        })
     })
 }
 
