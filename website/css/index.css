@@ -1,21 +1,19 @@
 body {
   overflow-x: hidden;
 }
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-.round-border {
-  border-radius: 4px;
-}
-.btn {
-  border-radius: 4px;
-}
-.card {
-  border-radius: 4px;
-}
 ul {
   padding-inline-start: 0px;
+}
+.hero-img {
+  background-image: url("http://127.0.0.1:5501/website//images/hero.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 3rem;
+}
+.hero-info {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
 ion-icon {
@@ -56,12 +54,26 @@ ion-icon {
 #close:hover {
   cursor: pointer;
 }
+button {
+  color: gray;
+  background-color: white;
+  border: 0.2rem solid gray;
+  width: 25rem;
+  height: 4rem;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  margin: 1rem 0;
+  border-radius: 0.4rem;
+}
+button:hover {
+  color: white;
+  background-color: gray;
+  cursor: pointer;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4%;
-  height: nav-height;
 }
 nav > div {
   text-align: center;
@@ -87,11 +99,9 @@ nav > div {
   opacity: 1;
 }
 .nav-window > div {
-  height: 13rem;
   display: flex;
   align-items: center;
   text-align: left;
-  padding: 2rem 4%;
 }
 .nav-links ul {
   padding: 0;
@@ -111,7 +121,7 @@ nav > div {
 @keyframes nav-link-fade {
   from {
     opacity: 0;
-    transform: translateX(-10rem);
+    transform: translateX(-20rem);
   }
   to {
     opacity: 1;
@@ -129,4 +139,7 @@ h1 {
 p {
   font-family: 'Lora';
   font-size: 2rem;
+}
+button {
+  font-family: 'Roboto Condensed';
 }

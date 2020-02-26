@@ -1,0 +1,21 @@
+@btn-background: white;
+@btn-border: gray;
+@btn-text: gray;
+
+button {
+    color: @btn-text;
+    background-color: @btn-background;
+    border: .2rem solid @btn-border;
+    width: 25rem;
+    height: 4rem;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    margin: 1rem 0;
+    border-radius: .4rem;
+}
+
+button:hover {
+    color: @btn-background;
+    background-color: @btn-border;
+    cursor: pointer;
+}

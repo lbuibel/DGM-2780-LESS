@@ -1,13 +1,11 @@
 @nav-height: 13rem;
-@base-url: "http://127.0.0.1:5501/website/";
 
 // CONTAINS MAMBURGER MENU, COMPANY NAME AND CART LINK
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4%;
-    height: nav-height;
+    // padding: 1rem 4%;
 }
 
 // CENTERING SPA NAME
@@ -39,13 +37,12 @@ nav > div {
     opacity: 1;
 }
 
-// DIV CONTAINS MENU CLOSE BUTTON - SPACING IS TO MATCH IT UP WITH HAMBURGER BUTTON
+// DIV CONTAINS MENU CLOSE BUTTON
+// HEIGHT IS SET/CALCULATED BY JAVASCRIPT SO THE HAMBURGER MENU MATCHES LOCATION OF CLOSE BUTTON
 .nav-window > div {
-    height: 13rem;
     display: flex;
     align-items: center;
     text-align: left;
-    padding: 2rem 4%;
 }
 
 .nav-links ul {
@@ -71,7 +68,7 @@ nav > div {
 @keyframes nav-link-fade {
     from {
         opacity: 0;
-        transform: translateX(-10rem)
+        transform: translateX(-20rem)
     }
     to {
         opacity: 1;

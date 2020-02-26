@@ -30,5 +30,11 @@ const navClose = () => {
     })
 }
 
+const calcNavHeight = () => {
+    const height = document.querySelector('nav').clientHeight
+    document.querySelector('.close-container').setAttribute("style", `height:${height}px`)
+}
+
 navOpen()
 navClose()
+calcNavHeight()
