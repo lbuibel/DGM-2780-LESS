@@ -5,7 +5,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding: 1rem 4%;
+    h1 {
+        letter-spacing: 3px;
+    }
+    p {
+        margin-bottom: 0;
+        margin-top: -.75rem;
+        font-size: 1.5rem;
+    }
+    padding: 2rem 0;
 }
 
 // CENTERING SPA NAME
@@ -17,7 +25,8 @@ nav > div {
 .nav-window {
     padding: 0;
     margin: 0;
-    background-image: url("@{base-url}/images/mtn.jpeg");
+    background-image: url("@{base-url}/images/water.jpeg");
+    background-position: center;
     color: white;
     position: absolute;
     right: 0px;
@@ -25,16 +34,17 @@ nav > div {
     height: 100vh;
     width: 100%;
     transform: translateX(-100%);
-    transition: .5s ease-out;
+    // CONTROLS SLIDING OUT SPEED
+    transition: 1.5s ease;
     opacity: 0;
 }
 
 // FADES MENU PAGE IN AND OUT
 .nav-active {
     transform: translateX(0);
-    transition: .5s ease-in;
-    transition: .5s ease-out;
     opacity: 1;
+    // CONTROLS NAV WINDOW SLIDING IN SPEED
+    transition: .75s ease-in;
 }
 
 // DIV CONTAINS MENU CLOSE BUTTON
@@ -73,5 +83,16 @@ nav > div {
     to {
         opacity: 1;
         transform: translateX(0rem)
+    }
+}
+
+@keyframes nav-link-fade-out {
+    from {
+        opacity: 1;
+        transform: translateX(0rem)
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-20rem)
     }
 }
