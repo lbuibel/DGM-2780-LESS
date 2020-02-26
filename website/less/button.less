@@ -1,8 +1,9 @@
 @btn-background: white;
 @btn-border: gray;
 @btn-text: gray;
+@btn-radius: .4rem;
 
-button {
+.lg-btn {
     color: @btn-text;
     background-color: @btn-background;
     border: .2rem solid @btn-border;
@@ -11,11 +12,30 @@ button {
     text-transform: uppercase;
     font-size: 1.75rem;
     margin: 4rem 0;
-    border-radius: .4rem;
+    border-radius: @btn-radius;
     transition: .5s;
 }
 
-button:hover {
+.lg-btn:hover {
+    color: @btn-background;
+    background-color: @btn-border;
+    cursor: pointer;
+}
+
+.card-btn {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: @btn-background;
+    border: .2rem solid @btn-border;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    border-radius: @btn-radius;
+    color: @btn-text;
+    transition: .5s;
+}
+
+.card-btn:hover {
     color: @btn-background;
     background-color: @btn-border;
     cursor: pointer;
