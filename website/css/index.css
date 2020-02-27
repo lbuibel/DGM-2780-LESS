@@ -53,8 +53,12 @@ button {
 .small-card p {
   font-size: 1.8rem;
 }
+.sign-up h3 {
+  font-family: 'Yeseva One';
+  font-size: 2.4rem;
+}
 ion-icon {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 ion-icon {
   color: #272727;
@@ -72,6 +76,7 @@ ion-icon {
   color: white;
   padding: 1rem;
   border-radius: 4rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 #cart {
   font-size: 3.6rem;
@@ -125,6 +130,60 @@ ion-icon {
   background-color: gray;
   cursor: pointer;
 }
+.form-btn {
+  background-color: red;
+}
+.sign-up {
+  background-color: #FAF3E5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25vh;
+}
+.sign-up h3 {
+  margin: 4rem 0;
+}
+.sign-up .input {
+  width: 50%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up .input input {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: 'Roboto Condensed';
+  background-color: transparent !important;
+  border: none;
+}
+.sign-up .input input:focus {
+  outline-width: 0;
+}
+.sign-up .input button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+}
+.sign-up .input button:hover {
+  cursor: pointer;
+}
+.sign-up .icons {
+  margin: 2rem 0;
+}
+.sign-up .icons ion-icon {
+  margin: 0 1rem;
+}
+.sign-up .icons ion-icon:hover {
+  cursor: pointer;
+}
 .background-img {
   background-position: center;
   background-repeat: no-repeat;
@@ -138,7 +197,6 @@ ion-icon {
   background-color: white;
   height: 35rem;
   box-shadow: 5px 8px 34px 0 rgba(0, 0, 0, 0.05);
-  transform: translateY(0);
   transition: ease-out 0.25s;
 }
 @media (max-width: 665px) {
@@ -147,7 +205,7 @@ ion-icon {
     flex-direction: column;
   }
 }
-.lg-card-img {
+.large-card .lg-card-img {
   background-image: url("http://127.0.0.1:5501/website//images/massage.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -156,12 +214,12 @@ ion-icon {
   height: 85%;
 }
 @media (max-width: 665px) {
-  .lg-card-img {
+  .large-card .lg-card-img {
     width: 100%;
     height: 50%;
   }
 }
-.lg-card-info {
+.large-card .lg-card-info {
   width: 50%;
   text-align: left;
   height: 85%;
@@ -171,22 +229,24 @@ ion-icon {
   justify-content: space-between;
 }
 @media (max-width: 665px) {
-  .lg-card-info {
+  .large-card .lg-card-info {
     width: 100%;
     height: 50%;
     padding: 4%;
     justify-content: space-evenly;
   }
 }
-.large-card:hover {
-  width: 92%;
-  transition: ease-out 0.25s;
-  transform: translateY(-1rem);
+@media (min-width: 40rem) {
+  .large-card:hover {
+    transition: ease-out 0.25s;
+    transform: translateY(-1rem);
+    width: 92%;
+  }
 }
 .small-card-container {
   width: 90%;
   max-width: 120rem;
-  margin: 10rem auto;
+  margin: 10rem auto 5rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -196,37 +256,51 @@ ion-icon {
     justify-content: space-between;
   }
 }
-.small-card {
+.small-card-container .small-card {
   background-color: white;
   width: 100%;
   height: 50rem;
-  margin-bottom: 4%;
+  margin-bottom: 8%;
   box-shadow: 5px 8px 34px 0 rgba(0, 0, 0, 0.05);
+  transition: ease-out 0.25s;
 }
 @media (min-width: 40rem) {
-  .small-card {
+  .small-card-container .small-card {
     width: 48%;
+    margin-bottom: 4%;
   }
 }
 @media (min-width: 60rem) {
-  .small-card {
+  .small-card-container .small-card {
     width: 31%;
   }
 }
-.sm-card-img {
+.small-card-container .sm-card-img {
   height: 60%;
   background-image: url("http://127.0.0.1:5501/website//images/massage.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.sm-card-info {
+.small-card-container .sm-card-info {
   padding: 2rem;
   height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 40rem) {
+  .small-card:hover {
+    transition: ease-out 0.25s;
+    transform: translateY(-1rem);
+    width: 49%;
+  }
+}
+@media (min-width: 60rem) {
+  .small-card:hover {
+    width: 32%;
+  }
 }
 nav {
   display: flex;

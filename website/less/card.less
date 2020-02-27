@@ -1,13 +1,14 @@
 @card-shadow: 5px 8px 34px 0 rgba(0,0,0,0.05);
+@breakpoint-1: 40rem;
 
-
-
+// USED TO STYLE IAMGES ON CARDS
 .background-img {
     background-position: center;
 	background-repeat: no-repeat;
     background-size: cover;
 }
 
+// LARGE CARD STYLING
 .large-card {
     display: flex;
     width: 90%;
@@ -16,45 +17,46 @@
     background-color: white;
     height: 35rem;
     box-shadow: @card-shadow;
-    transform: translateY(0);
     transition: ease-out .25s;
     @media (max-width: 665px) {
         height: 60rem;
         flex-direction: column;
     }
-}
-
-.lg-card-img {
-    background-image: url("@{base-url}/images/massage.jpeg");
-    .background-img;
-    width: 50%;
-    height: 85%;
-    @media (max-width: 665px) {
-        width: 100%;
-        height: 50%;
+    .lg-card-img {
+        background-image: url("@{base-url}/images/massage.jpeg");
+        .background-img;
+        width: 50%;
+        height: 85%;
+        @media (max-width: 665px) {
+            width: 100%;
+            height: 50%;
+        }
+    }
+    .lg-card-info {
+        width: 50%;
+        text-align: left;
+        height: 85%;
+        padding: 3% 3% 0 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media (max-width: 665px) {
+            width: 100%;
+            height: 50%;
+            padding: 4%;
+            justify-content: space-evenly;
+        }
     }
 }
 
-.lg-card-info {
-    width: 50%;
-    text-align: left;
-    height: 85%;
-    padding: 3% 3% 0 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @media (max-width: 665px) {
-        width: 100%;
-        height: 50%;
-        padding: 4%;
-        justify-content: space-evenly;
-    }
-}
 
 .large-card:hover {
-    width: 92%;
-    transition: ease-out .25s;
-    transform: translateY(-1rem)
+    // NO HOVER ON MOBILE
+    @media (min-width: @breakpoint-1) {
+        transition: ease-out .25s;
+        transform: translateY(-1rem);
+        width: 92%;
+    }
 }
 
 // SMALL CARD STYLING
@@ -63,41 +65,53 @@
 .small-card-container {
     width: 90%;
     max-width: 120rem;
-    margin: 10rem auto;
+    margin: 10rem auto 5rem auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    // BREAKPOINT USED IN MULTIPLE PLACES - ENSURES SMALL CARDS ARE ALIGNED RIGHT
+    // IN THEIR CONTAINER
     @media (min-width: @breakpoint-1) {
+        justify-content: space-between;
+    }
+    .small-card {
+        background-color: white;
+        width: 100%;
+        height: 50rem;
+        margin-bottom: 8%;
+        box-shadow: @card-shadow;
+        transition: ease-out .25s;
+        @media (min-width: @breakpoint-1) {
+            width: 48%;
+            margin-bottom: 4%;
+        }
+        @media (min-width: 60rem) {
+            width: 31%;
+        }
+    }
+    .sm-card-img {
+        height: 60%;
+        background-image: url("@{base-url}/images/massage.jpeg");
+        .background-img;
+    }
+    .sm-card-info {
+        padding: 2rem;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
     }
 }
 
-.small-card {
-    background-color: white;
-    width: 100%;
-    height: 50rem;
-    margin-bottom: 4%;
-    box-shadow: @card-shadow;
+.small-card:hover {
+    // NO HOVER ON MOBILE
     @media (min-width: @breakpoint-1) {
-        width: 48%;
+        transition: ease-out .25s;
+        transform: translateY(-1rem);
+        width: 49%;
     }
     @media (min-width: 60rem) {
-        width: 31%;
+        width: 32%;
     }
 }
-
-.sm-card-img {
-    height: 60%;
-    background-image: url("@{base-url}/images/massage.jpeg");
-    .background-img;
-}
-
-.sm-card-info {
-    padding: 2rem;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
