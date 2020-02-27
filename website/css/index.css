@@ -45,6 +45,14 @@ button {
   font-family: 'Roboto Condensed';
   text-transform: uppercase;
 }
+.small-card h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+}
+.small-card p {
+  font-size: 1.8rem;
+}
 ion-icon {
   font-size: 24px;
 }
@@ -117,9 +125,15 @@ ion-icon {
   background-color: gray;
   cursor: pointer;
 }
+.background-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .large-card {
   display: flex;
   width: 90%;
+  max-width: 120rem;
   margin: 0 auto 5rem auto;
   background-color: white;
   height: 35rem;
@@ -134,13 +148,15 @@ ion-icon {
   }
 }
 .lg-card-img {
+  background-image: url("http://127.0.0.1:5501/website//images/massage.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 50%;
   height: 85%;
-  border: solid purple;
 }
 @media (max-width: 665px) {
   .lg-card-img {
-    border: solid blue;
     width: 100%;
     height: 50%;
   }
@@ -166,6 +182,51 @@ ion-icon {
   width: 92%;
   transition: ease-out 0.25s;
   transform: translateY(-1rem);
+}
+.small-card-container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 10rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 40rem) {
+  .small-card-container {
+    justify-content: space-between;
+  }
+}
+.small-card {
+  background-color: white;
+  width: 100%;
+  height: 50rem;
+  margin-bottom: 4%;
+  box-shadow: 5px 8px 34px 0 rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 40rem) {
+  .small-card {
+    width: 48%;
+  }
+}
+@media (min-width: 60rem) {
+  .small-card {
+    width: 31%;
+  }
+}
+.sm-card-img {
+  height: 60%;
+  background-image: url("http://127.0.0.1:5501/website//images/massage.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sm-card-info {
+  padding: 2rem;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 nav {
   display: flex;
