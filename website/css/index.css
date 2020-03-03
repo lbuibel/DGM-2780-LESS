@@ -39,6 +39,12 @@ ul {
   width: 90%;
   margin: 0 auto;
 }
+.hero-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero-section {
   margin-bottom: 7rem;
 }
@@ -104,7 +110,7 @@ ion-icon {
   color: white;
   padding: 1rem;
   border-radius: 4rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
 }
 #cart {
   font-size: 3.6rem;
