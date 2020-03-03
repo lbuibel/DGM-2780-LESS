@@ -25,19 +25,14 @@ ul {
     margin-left: 0;
   }
 }
-.hero-img {
-  background-image: url("http://127.0.0.1:5501/website//images/mtn.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
-  margin-bottom: 3rem;
-}
 .hero-info {
   text-align: center;
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
+}
+.left {
+  text-align: left;
 }
 .hero-text {
   color: white;
@@ -55,7 +50,62 @@ ul {
 section > h1 {
   padding: 7rem;
 }
+.slider {
+  background-color: #f77777;
+  height: 30rem;
+  margin: 7rem 0;
+}
 /*# sourceMappingURL=main.css.map */
+.background-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-img > img {
+  object-fit: cover;
+  height: 55vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.large-card > img {
+  object-fit: cover;
+  width: 50%;
+  height: 85%;
+}
+@media (max-width: 665px) {
+  .large-card > img {
+    width: 100%;
+    height: 50%;
+  }
+}
+.small-card > img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero-text h1 {
+  font-size: 4.8rem;
+}
+#about {
+  background-image: url("http://127.0.0.1:5501/website//images/pool.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  margin-bottom: 3rem;
+}
+.img-container {
+  height: 60rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.img-container img {
+  width: 48%;
+}
 html {
   font-size: 62.5%;
 }
@@ -81,6 +131,7 @@ button {
 }
 .small-card h2 {
   font-size: 2.4rem;
+  margin-bottom: 0;
   text-transform: uppercase;
   font-family: 'Roboto Condensed';
 }
@@ -168,7 +219,7 @@ ion-icon {
   background-color: red;
 }
 .sign-up {
-  background-color: #FAF3E5;
+  background-color: #d1ebde;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,22 +288,8 @@ ion-icon {
 }
 @media (max-width: 665px) {
   .large-card {
-    height: 60rem;
+    height: 80rem;
     flex-direction: column;
-  }
-}
-.large-card .lg-card-img {
-  background-image: url("http://127.0.0.1:5501/website//images/massage.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 50%;
-  height: 85%;
-}
-@media (max-width: 665px) {
-  .large-card .lg-card-img {
-    width: 100%;
-    height: 50%;
   }
 }
 .large-card .lg-card-info {
@@ -293,6 +330,7 @@ ion-icon {
   }
 }
 .small-card-container .small-card {
+  padding-bottom: 2rem;
   background-color: white;
   width: 100%;
   height: 60rem;
@@ -310,13 +348,6 @@ ion-icon {
   .small-card-container .small-card {
     width: 31%;
   }
-}
-.small-card-container .sm-card-img {
-  height: 60%;
-  background-image: url("http://127.0.0.1:5501/website//images/massage.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .small-card-container .sm-card-info {
   padding: 2rem;
@@ -358,7 +389,8 @@ nav > div {
 .nav-window {
   padding: 0;
   margin: 0;
-  background-image: url("http://127.0.0.1:5501/website//images/aloe.jpeg");
+  background-color: gray;
+  background-image: url("http://127.0.0.1:5501/website//images/aloe_b&w.jpg");
   background-position: center;
   color: white;
   position: absolute;
@@ -394,6 +426,10 @@ nav > div {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 3.6rem;
+  text-decoration: none;
+}
+.nav-links li a:hover {
+  text-decoration: underline;
 }
 @keyframes nav-link-fade {
   from {

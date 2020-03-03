@@ -19,18 +19,8 @@
     box-shadow: @card-shadow;
     transition: ease-out .25s;
     @media (max-width: 665px) {
-        height: 60rem;
+        height: 80rem;
         flex-direction: column;
-    }
-    .lg-card-img {
-        background-image: url("@{base-url}/images/massage.jpeg");
-        .background-img;
-        width: 50%;
-        height: 85%;
-        @media (max-width: 665px) {
-            width: 100%;
-            height: 50%;
-        }
     }
     .lg-card-info {
         width: 50%;
@@ -75,6 +65,7 @@
         justify-content: space-between;
     }
     .small-card {
+        padding-bottom: 2rem;
         background-color: white;
         width: 100%;
         height: 60rem;
@@ -88,11 +79,6 @@
         @media (min-width: 60rem) {
             width: 31%;
         }
-    }
-    .sm-card-img {
-        height: 60%;
-        background-image: url("@{base-url}/images/massage.jpeg");
-        .background-img;
     }
     .sm-card-info {
         padding: 2rem;
