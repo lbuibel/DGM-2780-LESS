@@ -23,6 +23,22 @@ ul {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
+    padding: 0;
+  }
+}
+.nav-container {
+  width: 90%;
+  max-width: 120rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 665px) {
+  .nav-container {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 .hero-info {
@@ -30,6 +46,9 @@ ul {
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
+}
+.hero-info h1 {
+  margin-bottom: 2rem;
 }
 .left {
   text-align: left;
@@ -51,7 +70,7 @@ section > h1 {
   padding: 7rem;
 }
 .slider {
-  background-color: #f77777;
+  background-color: #c68787;
   height: 30rem;
   margin: 7rem 0;
 }
@@ -67,7 +86,7 @@ section > h1 {
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 .large-card > img {
   object-fit: cover;
@@ -86,24 +105,28 @@ section > h1 {
   object-fit: cover;
 }
 .hero-text h1 {
-  font-size: 4.8rem;
+  font-size: 5.2rem;
 }
 #about {
-  background-image: url("http://127.0.0.1:5501/website//images/pool.jpeg");
+  background-image: url("http://127.0.0.1:5501/website//images/resort.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 .img-container {
-  height: 60rem;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 3rem;
 }
 .img-container img {
+  width: 100%;
+}
+.img-container > div {
   width: 48%;
 }
 html {
@@ -114,6 +137,7 @@ h1 {
   font-size: 3.6rem;
   line-height: 4.6rem;
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 p {
   font-family: 'Lora';
@@ -312,7 +336,7 @@ ion-icon {
 @media (min-width: 40rem) {
   .large-card:hover {
     transition: ease-out 0.25s;
-    transform: translateY(-1rem);
+    transform: translateY(-0.75rem);
     width: 92%;
   }
 }
@@ -360,7 +384,7 @@ ion-icon {
 @media (min-width: 40rem) {
   .small-card:hover {
     transition: ease-out 0.25s;
-    transform: translateY(-1rem);
+    transform: translateY(-0.75rem);
     width: 49%;
   }
 }
@@ -422,7 +446,8 @@ nav > div {
 }
 .nav-links li a {
   color: white;
-  font-family: 'Yeseva One';
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 3.6rem;
