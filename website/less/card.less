@@ -1,13 +1,3 @@
-@card-shadow: 5px 8px 34px 0 rgba(0,0,0,0.05);
-@breakpoint-1: 40rem;
-
-// USED TO STYLE IAMGES ON CARDS
-.background-img {
-    background-position: center;
-	background-repeat: no-repeat;
-    background-size: cover;
-}
-
 // LARGE CARD STYLING
 .large-card {
     display: flex;
@@ -37,21 +27,17 @@
             justify-content: space-evenly;
         }
     }
-}
 
-
-.large-card:hover {
-    // NO HOVER ON MOBILE
-    @media (min-width: @breakpoint-1) {
-        transition: ease-out .25s;
-        transform: translateY(-.75rem);
-        width: 92%;
+    &:hover {
+        @media (min-width: @card-breakpoint) {
+            transition: ease-out .25s;
+            transform: translateY(-.75rem);
+            width: 92%;
+        }
     }
 }
 
 // SMALL CARD STYLING
-@breakpoint-1: 40rem;
-
 .small-card-container {
     width: 90%;
     max-width: 120rem;
@@ -61,7 +47,7 @@
     justify-content: center;
     // BREAKPOINT USED IN MULTIPLE PLACES - ENSURES SMALL CARDS ARE ALIGNED RIGHT
     // IN THEIR CONTAINER
-    @media (min-width: @breakpoint-1) {
+    @media @phone {
         justify-content: space-between;
     }
     .small-card {
@@ -72,12 +58,23 @@
         margin-bottom: 8%;
         box-shadow: @card-shadow;
         transition: ease-out .25s;
-        @media (min-width: @breakpoint-1) {
+        @media @phone {
             width: 48%;
             margin-bottom: 4%;
         }
-        @media (min-width: 60rem) {
+        @media @tablet {
             width: 31%;
+        }
+
+        &:hover {
+            @media @phone {
+                transition: ease-out .25s;
+                transform: translateY(-.75rem);
+                width: 49%;
+            }
+            @media @tablet {
+                width: 32%;
+            }
         }
     }
     .sm-card-info {
@@ -87,17 +84,5 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-    }
-}
-
-.small-card:hover {
-    // NO HOVER ON MOBILE
-    @media (min-width: @breakpoint-1) {
-        transition: ease-out .25s;
-        transform: translateY(-.75rem);
-        width: 49%;
-    }
-    @media (min-width: 60rem) {
-        width: 32%;
     }
 }

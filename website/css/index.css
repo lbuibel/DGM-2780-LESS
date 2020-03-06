@@ -75,6 +75,26 @@ section > h1 {
   margin: 7rem 0;
 }
 /*# sourceMappingURL=main.css.map */
+@keyframes nav-link-fade {
+  from {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@keyframes nav-link-fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+}
 .background-img {
   background-position: center;
   background-repeat: no-repeat;
@@ -187,8 +207,14 @@ ion-icon {
   border-radius: 4rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
 }
+#burger:hover {
+  cursor: pointer;
+}
 #cart {
   font-size: 3.6rem;
+}
+#cart:hover {
+  cursor: pointer;
 }
 #close {
   color: white;
@@ -196,14 +222,10 @@ ion-icon {
   padding: 1rem;
   border-radius: 4rem;
 }
-#burger:hover {
-  cursor: pointer;
-}
-#cart:hover {
-  cursor: pointer;
-}
 #close:hover {
   cursor: pointer;
+  color: #ffbb3c;
+  border: 0.2rem solid #ffbb3c;
 }
 .lg-btn {
   color: gray;
@@ -238,9 +260,6 @@ ion-icon {
   color: white;
   background-color: gray;
   cursor: pointer;
-}
-.form-btn {
-  background-color: red;
 }
 .sign-up {
   background-color: #d1ebde;
@@ -294,11 +313,6 @@ ion-icon {
 }
 .sign-up .icons ion-icon:hover {
   cursor: pointer;
-}
-.background-img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .large-card {
   display: flex;
@@ -373,6 +387,18 @@ ion-icon {
     width: 31%;
   }
 }
+@media (min-width: 40rem) {
+  .small-card-container .small-card:hover {
+    transition: ease-out 0.25s;
+    transform: translateY(-0.75rem);
+    width: 49%;
+  }
+}
+@media (min-width: 60rem) {
+  .small-card-container .small-card:hover {
+    width: 32%;
+  }
+}
 .small-card-container .sm-card-info {
   padding: 2rem;
   height: 40%;
@@ -380,18 +406,6 @@ ion-icon {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-@media (min-width: 40rem) {
-  .small-card:hover {
-    transition: ease-out 0.25s;
-    transform: translateY(-0.75rem);
-    width: 49%;
-  }
-}
-@media (min-width: 60rem) {
-  .small-card:hover {
-    width: 32%;
-  }
 }
 nav {
   display: flex;
@@ -414,7 +428,7 @@ nav > div {
   padding: 0;
   margin: 0;
   background-color: gray;
-  background-image: url("http://127.0.0.1:5501/website//images/aloe_b&w.jpg");
+  background-image: url("../images/aloe.jpeg");
   background-position: center;
   color: white;
   position: absolute;
@@ -454,27 +468,7 @@ nav > div {
   text-decoration: none;
 }
 .nav-links li a:hover {
-  text-decoration: underline;
-}
-@keyframes nav-link-fade {
-  from {
-    opacity: 0;
-    transform: translateX(-20rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-}
-@keyframes nav-link-fade-out {
-  from {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(-20rem);
-  }
+  color: #ffbb3c;
 }
 footer {
   display: flex;
@@ -487,14 +481,14 @@ footer {
   border-bottom: 1px solid gray;
   margin-bottom: 4rem;
 }
-.footer-card {
+.footer-tile {
   width: 25%;
   min-width: 20rem;
   display: flex;
   margin-bottom: 6rem;
 }
 @media (max-width: 50rem) {
-  .footer-card {
+  .footer-tile {
     width: 50%;
   }
 }

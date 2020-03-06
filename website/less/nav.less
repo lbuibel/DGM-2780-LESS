@@ -1,5 +1,3 @@
-@nav-height: 13rem;
-
 // CONTAINS MAMBURGER MENU, COMPANY NAME AND CART LINK
 nav {
     display: flex;
@@ -26,7 +24,7 @@ nav > div {
     padding: 0;
     margin: 0;
     background-color: gray;
-    background-image: url("@{base-url}/images/aloe_b&w.jpg");
+    background-image: url("../images/aloe.jpeg");
     background-position: center;
     color: white;
     position: absolute;
@@ -75,31 +73,8 @@ nav > div {
     letter-spacing: 2px;
     font-size:3.6rem;
     text-decoration: none;
-}
 
-.nav-links li a:hover {
-    text-decoration: underline;
-}
-
-// USED TO FADE/SLIDE IN LINKS WHEN MENU PAGE OPENS
-@keyframes nav-link-fade {
-    from {
-        opacity: 0;
-        transform: translateX(-20rem)
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0rem)
-    }
-}
-
-@keyframes nav-link-fade-out {
-    from {
-        opacity: 1;
-        transform: translateX(0rem)
-    }
-    to {
-        opacity: 0;
-        transform: translateX(-20rem)
+    &:hover {
+        color: @main-color;
     }
 }

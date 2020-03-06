@@ -1,5 +1,6 @@
 @base-url: "http://127.0.0.1:5501/website/";
 
+// MIXIN USED ON BACKGROUND IMAGES
 .background-img {
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +39,7 @@
 
 #about {
     background-image: url("@{base-url}/images/resort.jpeg");
-    .background-img;
+    .background-img();
     height: 50rem;
     margin-bottom: 6rem;
 }
@@ -55,6 +56,7 @@
         width: 100%;
     }
 }
+
 .img-container > div {
     width: 48%;
 }
