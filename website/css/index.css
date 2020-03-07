@@ -128,7 +128,7 @@ section > h1 {
   font-size: 5.2rem;
 }
 #about {
-  background-image: url("http://127.0.0.1:5501/website//images/resort.jpeg");
+  background-image: url("./images/resort.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -428,7 +428,6 @@ nav > div {
   padding: 0;
   margin: 0;
   background-color: gray;
-  background-image: url("https://tender-bohr-af684e.netlify.com/website/images/aloe_bw.jpg");
   background-position: center;
   color: white;
   position: absolute;
