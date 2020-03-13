@@ -10,6 +10,10 @@ body {
 ul {
   padding-inline-start: 0px;
 }
+blockquote {
+  margin: 0;
+  padding: 0;
+}
 .container {
   width: 90%;
   max-width: 120rem;
@@ -69,10 +73,45 @@ ul {
 section > h1 {
   padding: 7rem;
 }
-.slider {
-  background-color: #c68787;
-  height: 30rem;
+.quote {
+  background-color: #c1bebe;
+  min-height: 35rem;
+  height: auto;
   margin: 7rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quote > div {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+.quote > div img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.quote > div blockquote {
+  width: 75%;
+  padding: 5%;
+}
+@media (max-width: 665px) {
+  .quote > div {
+    flex-direction: column;
+    padding-top: 5%;
+  }
+  .quote > div blockquote {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
 @keyframes nav-link-fade {
@@ -185,6 +224,11 @@ button {
 .sign-up h3 {
   font-family: 'Yeseva One';
   font-size: 2.4rem;
+}
+blockquote {
+  font-family: 'Yeseva One';
+  font-size: 2.4rem;
+  line-height: 3.5rem;
 }
 ion-icon {
   font-size: 2.4rem;
@@ -427,7 +471,7 @@ nav > div {
 .nav-window {
   padding: 0;
   margin: 0;
-  background-color: gray;
+  background-color: #c1bebe;
   background-position: center;
   color: white;
   position: absolute;
