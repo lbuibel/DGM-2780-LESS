@@ -1,57 +1,7 @@
 @drop-shaow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 @base-url: "http://127.0.0.1:5501/website/";
 
-*, ::after, ::before {
-  box-sizing: border-box
-}
 
-// body text color variable
-// max width variable
-
-
-body { 
-  overflow-x: hidden;
-  margin: 0;
-} 
-
-
-ul {
-  padding-inline-start: 0px;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 90%;
-  max-width: 120rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-right: auto;
-  margin-left: auto;
-  @media (max-width: 665px) {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
-  }
-}
-
-.nav-container {
-  width: 90%;
-  max-width: 120rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-right: auto;
-  margin-left: auto;
-  @media (max-width: 665px) {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
 
 .hero-info {
   text-align: center;
@@ -88,55 +38,15 @@ section > h1 {
 
 }
 
-.container_small {
-  border: solid red;
-}
 
-.quote {
-  background-color: rgb(193, 190, 190);
-  min-height: 35rem;
-  height: auto;
-  margin: 7rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  > div {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    img {
-      object-fit: cover;
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-    }
-    blockquote {
-      width: 75%;
-      padding: 5%;
-    }
-    @media (max-width: 665px) {
-      flex-direction: column;
-      padding-top: 5%;
-      blockquote {
-        font-size: 2rem;
-        line-height: 2.2rem;
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-      }
-  }
-}
-
-}
 /*# sourceMappingURL=main.css.map */
 
 
 // IMPORTS
 @import "var.less";
 @import "keyframes";
+@import "reset";
+@import "container";
 @import "images.less";
 @import "typography.less";
 @import "icons.less";
