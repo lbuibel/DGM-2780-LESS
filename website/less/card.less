@@ -1,11 +1,10 @@
 // LARGE CARD STYLING
 .large-card {
   display: flex;
-  width: 90%;
-  max-width: 120rem;
+  .container-width();
   margin: 0 auto 5rem auto;
   background-color: white;
-  height: 35rem;
+  height: 350px;
   box-shadow: @card-shadow;
   transition: ease-out 0.25s;
   @media (max-width: 665px) {
@@ -39,8 +38,7 @@
 
 // SMALL CARD STYLING
 .small-card-container {
-  width: 90%;
-  max-width: 120rem;
+  .container-width();
   margin: 10rem auto 5rem auto;
   display: flex;
   flex-wrap: wrap;

@@ -1,9 +1,8 @@
 // ADJUSTS CHANGES CONTENT FROM ROWS TO COLUMNS BASED ON PAGE WIDTH
 .flex-container {
-  max-width: 120rem;
-  width: 90%;
-  margin: 0 auto;
+  .container-width();
   .flex-between();
+  margin: 0 auto;
   flex-direction: row;
   margin-bottom: 4rem;
   img {
@@ -23,8 +22,7 @@
 }
 
 .container {
-  width: 90%;
-  max-width: 120rem;
+  .container-width();
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   margin-right: auto;
@@ -38,8 +36,7 @@
 }
 
 .nav-container {
-  width: 90%;
-  max-width: 120rem;
+  .container-width();
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   margin-right: auto;
@@ -59,8 +56,7 @@
   .flex-between();
   align-items: center;
   > div {
-    max-width: 120rem;
-    width: 90%;
+    .container-width();
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
