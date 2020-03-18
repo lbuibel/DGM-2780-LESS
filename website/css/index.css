@@ -53,6 +53,108 @@ blockquote {
 section > h1 {
   padding: 7rem;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+nav h1 {
+  letter-spacing: 3px;
+}
+nav p {
+  margin-bottom: 0;
+  margin-top: -0.75rem;
+  font-size: 1.5rem;
+}
+nav > div {
+  text-align: center;
+}
+.nav-window {
+  padding: 0;
+  margin: 0;
+  background-color: #c1bebe;
+  background-image: url("https://dgm2780-less-logan-uibel.netlify.com/website/images/aloe_bw.jpg");
+  background-position: center;
+  color: white;
+  position: absolute;
+  right: 0px;
+  top: 0rem;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: 1.5s ease;
+  opacity: 0;
+}
+.nav-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.75s ease-in;
+}
+.nav-window > div {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.nav-links ul {
+  padding: 0;
+  margin: 0;
+}
+.nav-links li {
+  list-style-type: none;
+  margin: 0rem 0 5rem 0;
+}
+.nav-links li a {
+  color: white;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3.6rem;
+  text-decoration: none;
+}
+.nav-links li a:hover {
+  color: #d1ebde;
+}
+ion-icon {
+  font-size: 2.4rem;
+  color: #272727;
+}
+.icon-fill {
+  background-color: #272727;
+  border: 0.2rem solid #272727;
+  color: white;
+  padding: 1rem;
+  border-radius: 4rem;
+}
+#burger {
+  background-color: #272727;
+  border: 0.2rem solid #272727;
+  color: white;
+  padding: 1rem;
+  border-radius: 4rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
+}
+#burger:hover {
+  cursor: pointer;
+}
+#cart {
+  font-size: 3.6rem;
+}
+#cart:hover {
+  cursor: pointer;
+}
+#close {
+  color: white;
+  border: 0.2rem solid white;
+  padding: 1rem;
+  border-radius: 4rem;
+}
+#close:hover {
+  cursor: pointer;
+  color: #d1ebde;
+  border: 0.2rem solid #d1ebde;
+}
 .hero-info {
   text-align: center;
   max-width: 1200px;
@@ -254,45 +356,6 @@ blockquote {
   font-size: 2.4rem;
   line-height: 3.5rem;
 }
-ion-icon {
-  font-size: 2.4rem;
-  color: #272727;
-}
-.icon-fill {
-  background-color: #272727;
-  border: 0.2rem solid #272727;
-  color: white;
-  padding: 1rem;
-  border-radius: 4rem;
-}
-#burger {
-  background-color: #272727;
-  border: 0.2rem solid #272727;
-  color: white;
-  padding: 1rem;
-  border-radius: 4rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
-}
-#burger:hover {
-  cursor: pointer;
-}
-#cart {
-  font-size: 3.6rem;
-}
-#cart:hover {
-  cursor: pointer;
-}
-#close {
-  color: white;
-  border: 0.2rem solid white;
-  padding: 1rem;
-  border-radius: 4rem;
-}
-#close:hover {
-  cursor: pointer;
-  color: #d1ebde;
-  border: 0.2rem solid #d1ebde;
-}
 .lg-btn {
   color: gray;
   background-color: white;
@@ -472,69 +535,6 @@ ion-icon {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0;
-}
-nav h1 {
-  letter-spacing: 3px;
-}
-nav p {
-  margin-bottom: 0;
-  margin-top: -0.75rem;
-  font-size: 1.5rem;
-}
-nav > div {
-  text-align: center;
-}
-.nav-window {
-  padding: 0;
-  margin: 0;
-  background-color: #c1bebe;
-  background-image: url("https://dgm2780-less-logan-uibel.netlify.com/website/images/aloe_bw.jpg");
-  background-position: center;
-  color: white;
-  position: absolute;
-  right: 0px;
-  top: 0rem;
-  height: 100vh;
-  width: 100%;
-  transform: translateX(-100%);
-  transition: 1.5s ease;
-  opacity: 0;
-}
-.nav-active {
-  transform: translateX(0);
-  opacity: 1;
-  transition: 0.75s ease-in;
-}
-.nav-window > div {
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
-.nav-links ul {
-  padding: 0;
-  margin: 0;
-}
-.nav-links li {
-  list-style-type: none;
-  margin: 0rem 0 5rem 0;
-}
-.nav-links li a {
-  color: white;
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 3.6rem;
-  text-decoration: none;
-}
-.nav-links li a:hover {
-  color: #d1ebde;
 }
 footer {
   display: flex;
