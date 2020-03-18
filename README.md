@@ -32,4 +32,5 @@
 
 
 Website homepage was based on: [Sundance-Spa](https://www.sundanceresort.com/spa/)
+
 Netlify Link - [Calm-Spa](https://dgm2780-less-logan-uibel.netlify.com/website/about.html)
