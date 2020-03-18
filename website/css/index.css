@@ -7,9 +7,6 @@
 .hero-info h1 {
   margin-bottom: 2rem;
 }
-.left {
-  text-align: left;
-}
 .hero-text {
   color: white;
   display: flex;
@@ -27,6 +24,17 @@ section > h1 {
   padding: 7rem;
 }
 /*# sourceMappingURL=main.css.map */
+.left {
+  text-align: left;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-wrap {
+  justify-content: center;
+  flex-wrap: wrap;
+}
 @keyframes nav-link-fade {
   from {
     opacity: 0;
@@ -67,8 +75,8 @@ blockquote {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   margin-bottom: 4rem;
 }
 .flex-container img {
@@ -191,7 +199,7 @@ blockquote {
   font-size: 5.2rem;
 }
 #about {
-  background-image: url("./images/resort.jpeg");
+  background-image: url("https://dgm2760-less-logan-uibel.netlify.com/website/images/resort.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -242,8 +250,6 @@ blockquote {
 }
 ion-icon {
   font-size: 2.4rem;
-}
-ion-icon {
   color: #272727;
 }
 .icon-fill {
@@ -339,7 +345,7 @@ ion-icon {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   background-color: transparent !important;
   border: none;
 }
@@ -354,7 +360,7 @@ ion-icon {
   font-size: 2rem;
   font-size: 1.8rem;
   text-transform: uppercase;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
 }
 .sign-up .input button:hover {
   cursor: pointer;
@@ -482,6 +488,7 @@ nav > div {
   padding: 0;
   margin: 0;
   background-color: #c1bebe;
+  background-image: url("https://dgm2760-less-logan-uibel.netlify.com/website/images/aloe_bw.jpg");
   background-position: center;
   color: white;
   position: absolute;
@@ -513,7 +520,7 @@ nav > div {
 }
 .nav-links li a {
   color: white;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -557,7 +564,7 @@ footer {
   text-orientation: mixed;
   transform: rotate(180deg);
   font-size: 1.6rem;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-weight: 700;
 }
 .footer-links {
